@@ -1,0 +1,69 @@
+<html>
+    <!-- These are summary of expected input for querries -->
+     <!-- Frontend is still under development -->
+
+     <!-- Registration form -->
+        <form id="register-form" class="form">
+          <label for="username" class="form-label">Username:</label>
+          <input type="text" id="username" name="username" class="form-input" required>
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" id="email" name="email" class="form-input" required>
+          <label for="password" class="form-label">Password:</label>
+          <input type="password" id="password" name="password" class="form-input" required>
+          <label for="location" class="form-label">Location:</label>
+          <input type="text" id="location" name="location" class="form-input" required>
+          <label for="bio" class="form-label">Bio:</label>
+          <textarea id="bio" name="bio" class="form-input"></textarea>
+          <label for="phone" class="form-label">Phone:</label>
+          <input type="text" id="phone" name="phone" class="form-input" required>
+          <button type="submit" class="form-button">Register</button>
+        </form>
+
+        
+
+        <!-- Login form -->
+        <form id="login-form" class="form">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" id="password" name="password" class="form-input" required>
+            <button type="submit" class="form-button">Login</button>
+        </form>
+
+        <!-- Form to Create subprofile -->
+        <form id="create-subprofile-form" class="form">
+            <label for="subprofile-name" class="form-label">Sub-profile Name: </label>
+            <input type="text" id="subprofile-name" name="subprofile-name" class="form-input" required>
+            <button type="submit" class="form-button">Create Sub-Profile</button>
+        </form>
+
+        <!-- Create Event form -->
+        <form id="create-event-form" class="form">
+            <label for="name" class="form-label">Event Name:</label>
+            <input type="text" id="name" name="name" class="form-input" required>
+            
+            <label for="description" class="form-label">Description:</label>
+            <textarea id="description" name="description" class="form-input" required></textarea>
+            
+            <label for="location" class="form-label">Location:</label>
+            <input type="text" id="location" name="location" class="form-input" required>
+            
+            <label for="date" class="form-label">Date:</label>
+            <input type="datetime-local" id="date" name="date" class="form-input" required>
+            
+            <button type="submit" class="form-button">Create Event</button>
+        </form>
+
+        <!-- Search Musician form -->
+        <form id="search-form">
+            <label for="location">Location:</label>
+            <input type="text" id="location" required>
+            <br>
+            <label for="instruments">Instruments:</label>
+            <input type="text" id="instruments" required>
+            <br>
+            <button type="submit">Search</button>
+        </form>
+
+
+</html>
