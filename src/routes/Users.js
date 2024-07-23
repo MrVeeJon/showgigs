@@ -95,7 +95,7 @@ router.post('/subprofiles/create', auth, async (req, res) => {
       name,
       user: userId,
       location,
-      price: 0, // Default price
+      price: 0, // Default price and can be updated
       negotiable: false,
       portfolio: [],
       isActive: true,
