@@ -35,7 +35,7 @@ router.post('/events/search', auth, async (req, res) => {
       return res.status(404).json({ message: 'Event not found.' });
     }
 
-    // Find subprofiles matching the location and instruments
+    // Search and find subprofiles matching the location and instruments
     const subprofiles = await Subprofile.find({
       location: location,
       name: { $in: instruments.split(',') },
