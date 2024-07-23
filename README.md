@@ -93,6 +93,50 @@ Run the tests using the following command:
 npm test
 
 
+Folder Structure:  
+
+showgigs/
+├── models/
+│   ├── Event.js
+│   ├── Subprofile.js
+│   ├── User.js
+│   └── Group.js
+├── routes/
+│   ├── events.js
+│   ├── subprofiles.js
+│   ├── users.js
+│   └── homepage.js
+├── public/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   ├── createsubprofile.js
+│   │   ├── homepage.js
+│   │   └── utils.js
+│   └── index.html
+├── .gitignore
+├── server.js
+└── package.json
+
+
+In your .gitignore file, you should include entries like: 
+
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Miscellaneous
+.DS_Store
+.vscode/
+
+
 
   Contributing  
 Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.  
