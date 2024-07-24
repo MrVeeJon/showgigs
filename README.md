@@ -95,29 +95,29 @@ npm test
 
 Folder Structure:  
 
-showgigs/
-├── models/
-│   ├── Event.js
-│   ├── Subprofile.js
-│   ├── User.js
-│   └── Group.js
-├── routes/
-│   ├── events.js
-│   ├── subprofiles.js
-│   ├── users.js
-│   └── homepage.js
-├── public/
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   ├── createsubprofile.js
-│   │   ├── homepage.js
-│   │   └── utils.js
-│   └── index.html
-├── .gitignore
-├── server.js
-└── package.json
-
+showgigs/  
+├── models/  
+│   ├── Event.js  
+│   ├── Subprofile.js  
+│   ├── User.js  
+│   └── Group.js  
+├── routes/  
+│   ├── events.js  
+│   ├── subprofiles.js  
+│   ├── users.js  
+│   └── homepage.js  
+├── public/  
+│   ├── css/  
+│   │   └── style.css  
+│   ├── js/  
+│   │   ├── createsubprofile.js  
+│   │   ├── homepage.js  
+│   │   └── utils.js  
+│   └── index.html  
+├── .gitignore  
+├── server.js  
+└── package.json  
+  
 
 In your .gitignore file, you should include entries like: 
 
