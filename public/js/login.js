@@ -1,11 +1,9 @@
-// login route
-
 document.getElementById('login-form').addEventListener('submit', async (e) => {
   e.preventDefault();
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
 
-  const response = await fetch('http://localhost:3000/api/login', {
+  const response = await fetch('/api/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -16,11 +14,13 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
   const data = await response.json();
 
   if (response.ok) {
-    localStorage.setItem('token', data.token);
-    localStorage.setItem('user', JSON.stringify(data.user));
+    sessionStorage.setItem('token', data.token);
+    sessionStorage.setItem('user', JSON.stringify(data.user));
     window.location.href = 'home.html';
-  } else {
+} else {
     alert(data.message);
-  }
+}
 });
+
+
 
