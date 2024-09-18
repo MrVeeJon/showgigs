@@ -1,0 +1,182 @@
+
+body {
+  background-image: url('../images/background-pic.jpeg'); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  background-blend-mode: darken; 
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #F6F0E0;
+}
+
+
+.header {
+  color: whitesmoke;
+  width: 100%; 
+  
+  
+  padding: 10px;
+  height: 180px;
+  margin: 0; 
+  background: #29003d;
+
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.instrument-field {
+  float: left;
+  width: 100%;
+  color: whitesmoke;
+  padding: 10px;
+  height: 80px;
+  border: 1px solid whitesmoke;
+  margin: 0;
+  background-color: gray;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.left-column { 
+  color: #29003d;
+  border: 1px solid #ccc;
+  background: #F6F0E0;
+  margin: 0;
+  padding: 10px;
+  height: 200vh;
+  width: 20%;
+  float: left;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.rightcolumn { 
+  /* float: left; */
+  color: #333;
+  /* border: 1px solid #ccc; */
+  background: transparent;
+  margin: 0; 
+  padding: 10px;
+  height: 100vh; 
+  width: 75%; 
+  display: inline;
+  position: relative;
+  text-align: center;
+}
+
+.settings {
+  text-align: center;
+  color: whitesmoke;
+  
+}
+
+
+
+.logo {
+  /* width: 20%; */
+  height: 150px;
+  /* margin-right: 1em; */
+}
+
+.nav {
+  flex-grow: 1;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-list li {
+  margin-right: 1em;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.main {
+  padding: 2em;
+  height: 100%;
+}
+
+.main-title {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.main-description {
+  font-size: 1.2em;
+}
+
+.register-buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-top: 1em;
+}
+
+.form-input, .form-button, .form-textarea {
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+.form-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.form-button:hover {
+  background-color: #555;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* .section {
+  margin-bottom: 2em;
+} */
+
+.section-title {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.create-event-and-hire {
+  text-align: right;
+}
