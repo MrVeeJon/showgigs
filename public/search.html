@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowGIGs | Events-search</title>
+    <link rel="icon" href="images/showgigsIcon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="left-header">
+                <img class="the-logo" src="images/showgigsLogo.png" alt="logo">
+            </div>
+            <div class="middle-header">
+                <div class="profile-photo">
+                    <img class="profile-photo-image" src="images/profilephoto2.jpg" alt="progile photo">
+                </div>
+                <div class="username" id="username-id"></div>
+                <div class="bio" id="bio-id">bio</div>
+            </div>
+            <div class="right-header">
+                <div class="location-container">
+                    <div class="location-label"><strong>location:</strong></div>
+                    <div class="location" id="location-id"></div>
+                </div>
+                <a href="event.html"><div class="hire">I want to hire</div></a>
+                <div class="logout-btn" id="logout-btn-id">Logout</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-field-section">
+            <div class="search-field">
+                <a href="event.html"><div class="go-to-event">Events</div></a>
+                <div class="search-title-text" id="search-title-text-id">Search Musicians for this event</div>
+            </div>
+        </section>
+
+        <div class="the-selected-event">
+            <div class="selected-name" id="selected-name-id"></div>
+            <div class="selected-description" id="selected-description-id"></div>
+            <div class="selected-date" id="selected-date-id"></div>
+            <div class="selected-id" id="selected-id-id"></div>
+        </div>
+
+        <div class="form-wrapper" id="search-form-container-id">
+            <form id="search-form" class="form">
+                <label for="location" class="form-label">Location:</label>
+                <input type="text" id="location" class="form-input" required>
+                <label for="instruments" class="form-label">Instruments:</label>
+                <input type="text" id="instruments" class="form-input" required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <div class="profiles-container" id="profiles-container-id">
+            <!-- children dynamically created -->
+        </div>
+    </main>
+
+    <script src="js/search.js" defer></script>
+    <script src="js/logout.js" defer></script>
+</body>
+</html>

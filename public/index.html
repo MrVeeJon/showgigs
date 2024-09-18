@@ -1,69 +1,66 @@
-<html>
-    <!-- These are summary of expected input for querries -->
-     <!-- Frontend is still under development -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowGigs</title>
+    <link rel="icon" href="images/showgigsIcon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/landing.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="left-header">
+                <img class="the-logo" src="images/showgigsLogo.png" alt="logo">
+            </div>
+            <div class="nav-wrap">
+                <nav class="nav">
+                    <ul class="nav-list">
+                      <li><a href="index.html" class="nav-link">ShowGigs</a></li>
+                      <li><a href="register.html" class="nav-link">Register</a></li>
+                      <li><a href="login.html" class="nav-link">Login</a></li>
+                      <li><a href="home.html" class="nav-link">Home</a></li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+    </header>
 
-     <!-- Registration form -->
-        <form id="register-form" class="form">
-          <label for="username" class="form-label">Username:</label>
-          <input type="text" id="username" name="username" class="form-input" required>
-          <label for="email" class="form-label">Email:</label>
-          <input type="email" id="email" name="email" class="form-input" required>
-          <label for="password" class="form-label">Password:</label>
-          <input type="password" id="password" name="password" class="form-input" required>
-          <label for="location" class="form-label">Location:</label>
-          <input type="text" id="location" name="location" class="form-input" required>
-          <label for="bio" class="form-label">Bio:</label>
-          <textarea id="bio" name="bio" class="form-input"></textarea>
-          <label for="phone" class="form-label">Phone:</label>
-          <input type="text" id="phone" name="phone" class="form-input" required>
-          <button type="submit" class="form-button">Register</button>
-        </form>
+    <main>
+        <div class="main-wrap">
+            <div class="welcome-title">
+                <div class="main-title">
+                    Welcome to ShowGigs
+                </div>
+                <div class="title-para">
+                    Hire musicians for your events anywhere.
+                </div>
+            </div>
 
-        
+            <div class="text-content-wrap">
 
-        <!-- Login form -->
-        <form id="login-form" class="form">
-            <label for="email" class="form-label">Email:</label>
-            <input type="email" id="email" name="email" class="form-input" required>
-            <label for="password" class="form-label">Password:</label>
-            <input type="password" id="password" name="password" class="form-input" required>
-            <button type="submit" class="form-button">Login</button>
-        </form>
+                <div class="text-content">
+                    <p class="main-description">ShowGigs is designed to connect musicians with potential gigs available from their current location.</p>
+                </div>
 
-        <!-- Form to Create subprofile -->
-        <form id="create-subprofile-form" class="form">
-            <label for="subprofile-name" class="form-label">Sub-profile Name: </label>
-            <input type="text" id="subprofile-name" name="subprofile-name" class="form-input" required>
-            <button type="submit" class="form-button">Create Sub-Profile</button>
-        </form>
+                <div class="text-content">
+                    <p class="main-description">Musicians can create sub-profiles for different instruments, set prices and build their portfolios.</p>
+                </div>
 
-        <!-- Create Event form -->
-        <form id="create-event-form" class="form">
-            <label for="name" class="form-label">Event Name:</label>
-            <input type="text" id="name" name="name" class="form-input" required>
-            
-            <label for="description" class="form-label">Description:</label>
-            <textarea id="description" name="description" class="form-input" required></textarea>
-            
-            <label for="location" class="form-label">Location:</label>
-            <input type="text" id="location" name="location" class="form-input" required>
-            
-            <label for="date" class="form-label">Date:</label>
-            <input type="datetime-local" id="date" name="date" class="form-input" required>
-            
-            <button type="submit" class="form-button">Create Event</button>
-        </form>
+                <div class="text-content">
+                    <p class="main-description">As a hirer, hire the best for any role, check musician's performance portfolios, ratings and reviews.</p>
+                </div>
+            </div>
 
-        <!-- Search Musician form -->
-        <form id="search-form">
-            <label for="location">Location:</label>
-            <input type="text" id="location" required>
-            <br>
-            <label for="instruments">Instruments:</label>
-            <input type="text" id="instruments" required>
-            <br>
-            <button type="submit">Search</button>
-        </form>
-
-
+            <div class="register-buttons-container">
+                <div class="register-btn" id="musician">I am a musician</div>
+                <div class="register-btn" id="hire">I want to hire</div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 ShowGigs. All rights reserved.</p>
+    </footer>
+    <script src="js/register.js"></script>
+</body>
 </html>

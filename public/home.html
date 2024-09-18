@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowGIGs-Homepage</title>
+    <link rel="icon" href="images/showgigsIcon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="left-header">
+                <img class="the-logo" src="images/showgigsLogo.png" alt="logo">
+            </div>
+            <div class="middle-header">
+                <div class="profile-photo">
+                    <img class="profile-photo-image" src="images/profilephoto2.jpg" alt="progile photo">
+                </div>
+                <div class="username" id="username-id"></div>
+                <div class="bio" id="bio-id">bio</div>
+            </div>
+            <div class="right-header">
+                <div class="location-container">
+                    <div class="location-label"><strong>location:</strong></div>
+                    <div class="location" id="location-id"></div>
+                </div>
+                <a href="event.html"><div class="hire">I want to hire</div></a>
+                <div class="logout-btn" id="logout-btn-id">Logout</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="field">
+            <div class="instrument-icon-container">
+                <div class="instrument-topic"><strong>Instruments/fields</strong></div>
+                <button class="icon-button" id="icon-button-id"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="instrument-and-button" id="instrument-and-button-id">
+                <div class="instruments-container" id="instruments-container-id">
+                    <!-- Children dynamically created -->
+                </div>
+                <div class="add-button">+ add</div>
+                <div id="create-subprofile-form" class="form-wrapper hidden">
+                    <form>
+                        <label for="subprofile-name" class="form-label">Sub-profile Name: </label>
+                        <input type="text" id="subprofile-name" name="subprofile-name" class="form-input" required>
+                        <button type="submit" class="form-button">Create Sub-Profile</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="lower-body">
+            <aside class="side-nav">
+                <div class="side-nav-button">
+                    <div class="notification-box"></div>
+                    <a href="homepage.html"><div class="nav-link-name home-link">Home</div></a>
+                </div>
+                <div class="side-nav-button">
+                    <div class="notification-box"></div>
+                    <a href="event.html"><div class="nav-link-name">Events</div></a>
+                </div>
+                <div class="side-nav-button">
+                    <div class="notification-box">2</div>
+                    <a href="calendar.html"><div class="nav-link-name">Calendar</div></a>
+                </div>
+                <div class="side-nav-button">
+                    <div class="notification-box">12</div>
+                    <a href="groups.html"><div class="nav-link-name">Groups</div></a>
+                </div>
+            </aside>
+            <div class="field-settings-container">
+                <div class="field-container" id="field-container-id">
+                    <div class="field-name" id="field-name-id">Select instrument/field</div>
+                    <div class="price-active-container">
+                        <div class="price-containter">
+                            <div class="price-text">Price:</div>
+                            <div class="price" id="price-id"></div>
+                        </div>
+                        <div class="active-negotiable">
+                            <div class="hover-container">
+                                <div class="active" id="active-id"></div>
+                                <span class="hover-text">Change status</span>
+                            </div>
+                            <div class="hover-container">
+                                <div class="negotiable" id="negotiable-id"></div>
+                                <span class="hover-text">Change status</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field-settings">
+                    <div class="left-set">
+                        <div>
+                            <div id="set-location-button" class="set-button update-location">Update Location</div>
+                            <div class="form-wrapper hidden" id="set-location-form">
+                                <form id="location-form-id">
+                                    <label for="location" class="form-label">Location:</label>
+                                    <input type="text" id="location-text-id" name="location" class="form-input" required>
+                                    <button type="submit" class="form-button">Update location</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div>
+                        <div class="set-button gigs">Gigs</div>
+                        </div>
+                    </div>
+                    <div class="right-set">
+                        <div>
+                            <div id="set-price-button" class="set-button update-price">Update Price</div>
+                            <div class="form-wrapper hidden" id="set-price-form">
+                                <div class="warning-price-update">Make sure to: <br>Select instrument before update</div>
+                                <form id="price-form-id">
+                                    <label for="location" class="form-label">Price:</label>
+                                    <input type="text" id="price-text-id" name="location" class="form-input" required>
+                                    <button type="submit" class="form-button">Update price</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="set-button portfolio">Portfolio</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/routetest.js"></script>
+    <script src="js/logout.js" defer></script>
+</body>
+</html>

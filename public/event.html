@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShowGIGs | Events</title>
+    <link rel="icon" href="images/showgigsIcon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/event.css">
 </head>
@@ -17,47 +18,71 @@
                 <div class="profile-photo">
                     <img class="profile-photo-image" src="images/profilephoto2.jpg" alt="progile photo">
                 </div>
-                <div class="bio">bio</div>
+                <div class="username" id="username-id"></div>
+                <div class="bio" id="bio-id">bio</div>
             </div>
             <div class="right-header">
-                <div class="location"><strong>location:</strong> Uyo, Akwa Ibom, Nigeria</div>
-                <a href="homepage.html"><div class="hire">Home</div></a>
+                <div class="location-container">
+                    <div class="location-label"><strong>location:</strong></div>
+                    <div class="location" id="location-id"></div>
+                </div>
+                <a href="event.html"><div class="hire">I want to hire</div></a>
+                <div class="logout-btn" id="logout-btn-id">Logout</div>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="event-field">
-            
-            <div class="event-title-text"><strong>Create Event and Hire</strong></div>
-            
-        </section>
-
-        <div class="lower-body">
-            <aside class="side-nav">
-                <div class="side-nav-button">
-                    <div class="notification-box"></div>
-                    <a href="homepage.html"><div class="nav-link-name">Home</div></a>
+        <div class="event-section" id="event-section-id">
+            <section class="event-field-section">
+                <div class="event-field">
+                
+                    <div class="event-title-text" id="event-title-text-id">Create Event and Hire</div>
                 </div>
-                <div class="side-nav-button">
-                    <div class="notification-box"></div>
-                    <a href="event.html"><div class="nav-link-name event-link">Events</div></a>
+            </section>
+            <div class="form-wrapper">
+                <form id="create-event-form" class="form">
+                    <label for="name" class="form-label">Event Name:</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                    
+                    <label for="description" class="form-label">Description:</label>
+                    <textarea id="description" name="description" class="form-input" required></textarea>
+                    
+                    <label for="location" class="form-label">Location:</label>
+                    <input type="text" id="location" name="location" class="form-input" required>
+                    
+                    <label for="date" class="form-label">Date:</label>
+                    <input type="datetime-local" id="date" name="date" class="form-input" required>
+                    
+                    <button type="submit" class="form-button">Create Event</button>
+                </form>
+            </div>
+            <div class="lower-body">
+                <aside class="side-nav">
+                    <div class="side-nav-button">
+                        <div class="notification-box"></div>
+                        <a href="home.html"><div class="nav-link-name">Home</div></a>
+                    </div>
+                    <div class="side-nav-button">
+                        <div class="notification-box"></div>
+                        <a href="event.html"><div class="nav-link-name event-link">Events</div></a>
+                    </div>
+                    <div class="side-nav-button">
+                        <div class="notification-box">2</div>
+                        <a href="calendar.html"><div class="nav-link-name">Calendar</div></a>
+                    </div>
+                    <div class="side-nav-button">
+                        <div class="notification-box">12</div>
+                        <a href="groups.html"><div class="nav-link-name">Groups</div></a>
+                    </div>
+                </aside>
+                <div class="events-container" id="events-container-id">
+                    <!-- children dynamically created -->
                 </div>
-
-                <div class="side-nav-button">
-                    <div class="notification-box">2</div>
-                    <a href="calendar.html"><div class="nav-link-name">Calendar</div></a>
-                </div>
-
-                <div class="side-nav-button">
-                    <div class="notification-box">12</div>
-                    <a href="groups.html"><div class="nav-link-name">Groups</div></a>
-                </div>
-            </aside>
-            
+            </div>
         </div>
     </main>
-
-    <script src="js/homepage.js"></script>
+    <script src="js/event.js" defer></script>
+    <script src="js/logout.js"></script>
 </body>
 </html>
